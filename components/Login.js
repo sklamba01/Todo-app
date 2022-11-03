@@ -40,13 +40,7 @@ const Login = () => {
                     onChangeText={(text) => { setPassword(text) }}
                     label="Password"
                     placeholder='Password'
-                // keyboardType="numeric"
-                />
-                <Button
-                    style={{ paddingRight: 15, }}
-                    name={true ? "eye" : 'eye-slash'}
-                    size={20} color='gray'
-                    onPress={() => { }}
+                    keyboardType="visible-password"
                 />
 
                 <TouchableOpacity style={styles.btn} onPress={handleSubmit}>
